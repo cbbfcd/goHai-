@@ -5,7 +5,8 @@
     "pages/ser/search",
     "pages/template/template",
     "pages/select/select",
-    "pages/item/item"
+    "pages/item/item",
+    "pages/map/map"
   ],
   "tabBar": {
     "color": "#666",

@@ -18,7 +18,7 @@ Page({
     text3:'更多',
     right:'../../imgs/9.png',
     gourl:'../select/select',
-    title:'分类筛选',
+    title:'活动列表',
     types:[
       {id:'music',name:'音乐'},
       {id:'film',name:'电影'},
@@ -49,6 +49,9 @@ Page({
     }).catch(err =>{
       console.error(err)
     })
+  },
+  onReady:function(){
+    app.wechat.setNavigatorTitle(this.data.title).then(res=>res)
   },
   goCity:function(){
     wx.showToast({

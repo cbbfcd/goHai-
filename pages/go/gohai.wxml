@@ -1,6 +1,6 @@
 <import src="../template/template.wxml"/>
 <view wx:if="{{loading}}">
-    <template is="loadingtemp" data="{{text:'正在板命的加载中...',src:'../../imgs/loading1.gif'}}"/>
+    <template is="loadingtemp" data="{{text:'正在板命的加载中...',src:'../../imgs/loading2.gif'}}"/>
 </view>
 
 <view class='tem-view'>
@@ -32,7 +32,7 @@
            <!--内容-->
            <scroll-view class="content" scroll-x="true">
                 <view class="inner">
-                    <navigator wx:for-item="d" wx:for="{{ eventList }}" wx:key="{{ d.id }}" url="../item/item?id={{ item.id }}" wx:if="{{d.category_name == item.name}}">
+                    <navigator wx:for-item="d" wx:for="{{ eventList }}" wx:key="{{ d.id }}" url="../item/item?id={{ d.id }}" wx:if="{{d.category_name == item.name}}">
                     <view class="movie-item">
                         <image class="imgclass" src="{{ d.image}}" mode="aspectFill"/>
                         <text class="textclass">{{ d.title }}</text>

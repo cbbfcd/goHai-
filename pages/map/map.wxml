@@ -1,0 +1,1 @@
+<map longitude="{{jd}}" latitude="{{wd}}" scale='15' markers="{{markers}}" circles="{{circles}}" polyline="{{polyline}}" class="map" show-location />

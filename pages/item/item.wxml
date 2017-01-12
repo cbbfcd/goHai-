@@ -1,2 +1,32 @@
-<!--pages/item/item.wxml-->
-<text>pages/item/item.wxml</text>
+<view class='content'>
+    <!--图片-->
+    <view class='img-view'>
+        <image class='img-detail' src="{{eventData.image}}" mode="aspectFill"></image>
+    </view>
+    <!--标题-->
+    <view class='title'>
+        <text class='text-title'>{{eventData.title}}</text>
+    </view>
+    <!--时间和地点-->
+    <view class='time-loc'>
+         <!--时间-->
+        <view class="time-loc-item">
+            <text class='text-item'>{{time}}</text>
+            <text bindtap='getLoc' class='text-item1'>{{eventData.time_str}}></text>
+        </view>
+        <!--地点-->
+        <view class="time-loc-item1">
+            <text class='text-item'>{{location}}</text>
+            <navigator url="../map/map?jwd={{eventData.geo}}&loc={{eventData.address}}">
+                <text class='text-item1'>{{eventData.address}}></text>
+            </navigator>
+        </view>
+    </view>
+    <!--活动详情-->
+    <view class='e-detail'>
+        <text class='text-item2'>{{text3}}</text>
+    </view>
+    <view class='e-detail2'>
+        <text class='text-item3'>>{{eventData.content}}</text>
+    </view>
+</view>
