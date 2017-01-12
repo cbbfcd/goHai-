@@ -1,0 +1,7 @@
+<!--加载中的模板-->
+<template name='loadingTemplate' wx:if="{{loading}}">
+    <view class='loadingView'>
+        <image src="{{loadingSrc}}" mode="aspectFill" style='loadingImg'></image>
+        <text class='loading-text'>正板命加载中...</text>
+    </view>
+</template>

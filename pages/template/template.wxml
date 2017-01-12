@@ -1,0 +1,9 @@
+<!--模板-->
+<template name="loadingtemp">
+    <view class="tem-view tips">
+        <image class="img" src="{{src}}"></image>
+        <view>
+            <text class="tem-text">{{text}}</text>
+        </view>
+    </view>
+</template>

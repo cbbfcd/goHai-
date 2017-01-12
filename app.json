@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/go/gohai",
+    "pages/board/board",
+    "pages/ser/search",
+    "pages/template/template",
+    "pages/select/select",
+    "pages/item/item"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [{
+        "text": "goHai",
+        "pagePath": "pages/go/gohai",
+        "iconPath": "imgs/1.png",
+        "selectedIconPath": "imgs/2.png"
+      },
+      {
+        "text": "search",
+        "pagePath": "pages/ser/search",
+        "iconPath": "imgs/3.png",
+        "selectedIconPath": "imgs/4.png"
+      }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#268dcd",
+    "navigationBarTitleText": "goHai",
+    "navigationBarTextStyle":"white"
+  },
+  "debug": true
+}

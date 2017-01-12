@@ -1,0 +1,19 @@
+.board-slide{
+    width:750rpx;
+    height:1138rpx
+}
+.start{
+    position: absolute;
+    bottom: 292rpx;
+    left: 47%;
+    width: 350rpx;
+    margin-left: -150rpx;
+    background-color: rgba(53, 73, 94, 0.4);
+    height:73rpx;
+    border-radius:50rpx;
+}
+img{
+    flex: 1;
+}
+
+

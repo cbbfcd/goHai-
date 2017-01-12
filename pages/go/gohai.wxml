@@ -1,0 +1,47 @@
+<import src="../template/template.wxml"/>
+<view wx:if="{{loading}}">
+    <template is="loadingtemp" data="{{text:'正在板命的加载中...',src:'../../imgs/loading1.gif'}}"/>
+</view>
+
+<view class='tem-view'>
+    <!--顶部-->
+    <view class='view-top'>
+        <view class='view-top1' bindtap='goCity'>
+            <text>{{text}}</text>
+            <image class='right' src="{{right}}"></image>
+        </view>
+        <view class='view-top2' bindtap='goSel'>
+            <text>{{text1}}</text>
+            <image class='right' src="{{right}}"></image>
+        </view>
+    </view>
+    <!--分类-->
+    <view class="view-types">
+        <block wx:for="{{types}}" hidden="{{show}}">
+        <view wx:key="{item.id}">
+           <!--名字-->
+           <view class="view-types-item">
+                <view class="view-types-item1">
+                    <text class="text-name">{{item.name}}</text>
+                </view>
+                <view class="view-types-item2">
+                    <text class="text-more">{{text3}}</text>
+                    <image class='more-right' src="{{right}}"></image>
+                </view>
+           </view>
+           <!--内容-->
+           <scroll-view class="content" scroll-x="true">
+                <view class="inner">
+                    <navigator wx:for-item="d" wx:for="{{ eventList }}" wx:key="{{ d.id }}" url="../item/item?id={{ item.id }}" wx:if="{{d.category_name == item.name}}">
+                    <view class="movie-item">
+                        <image class="imgclass" src="{{ d.image}}" mode="aspectFill"/>
+                        <text class="textclass">{{ d.title }}</text>
+                    </view>
+                    </navigator>
+                </view>
+            </scroll-view>
+       </view>
+    </block>
+    </view>
+
+</view>

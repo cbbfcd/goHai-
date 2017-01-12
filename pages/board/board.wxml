@@ -1,0 +1,9 @@
+<!--引导页面-->
+<view>
+    <swiper class="board-slide" autoplay="true" indicator-dots="true" >
+        <swiper-item wx:for="{{imgUrls}}" wx:for-item="src" wx:key="*this" wx:for-index="index">
+            <image src="{{src}}" class="board-slide"></image>
+            <button class="start" bindtap="startAPP" wx:if="{{index == imgUrls.length - 1 }}"></button>
+        </swiper-item>
+    </swiper>
+</view>

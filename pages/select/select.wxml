@@ -1,0 +1,4 @@
+<import src="../template/template.wxml"/>
+<view wx:if="{{loading}}">
+    <template is="loadingtemp" data="{{text:'正在板命的加载中...',src:'../../imgs/loading1.gif'}}"/>
+</view>

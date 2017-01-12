@@ -1,0 +1,4 @@
+@import "../template/template.wxss";
+.tem-view{
+    background-color: #F0F0F0;
+}
