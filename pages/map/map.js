@@ -28,7 +28,7 @@ Page({
             latitude:  parseFloat(loc_str.split(" ")[0]),
             longitude: parseFloat(loc_str.split(" ")[1]),
             radius:300,
-            fillColor:"#F5F5F5DD",
+            fillColor:"#F5F5F500",
             color:"#0000CDAA"
         }],
         polyline:[{

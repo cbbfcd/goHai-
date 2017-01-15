@@ -65,5 +65,13 @@ Page({
       }).then(res =>{
         app.wechat.setNavigatorTitle(this.data.title).then(res=>{res.data})
       })
+  },
+  onShareAppMessage:function(){
+    return {
+      title: '分享功能',
+      desc: '这儿没有分享功能哦',
+      path: ''
+    }
+
   }
 })

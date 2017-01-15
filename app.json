@@ -6,7 +6,8 @@
     "pages/template/template",
     "pages/select/select",
     "pages/item/item",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/upload/upload"
   ],
   "tabBar": {
     "color": "#666",
@@ -20,7 +21,7 @@
         "selectedIconPath": "imgs/2.png"
       },
       {
-        "text": "search",
+        "text": "scanCode",
         "pagePath": "pages/ser/search",
         "iconPath": "imgs/3.png",
         "selectedIconPath": "imgs/4.png"

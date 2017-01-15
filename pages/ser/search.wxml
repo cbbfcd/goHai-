@@ -1,7 +1,3 @@
-<swiper autoplay="true" style="width:750rpx;height:1138rpx">
-  <block wx:for="{{imgUrls}}" wx:for-item="src" wx:key="slide_img">
-    <swiper-item>
-      <image src="{{src}}" style="width:750rpx;height:1138rpx"></image>
-    </swiper-item>
-  </block>
-</swiper>
+<view class="scan-view">
+  <image bindtap='scanCode' class='scan-img' src="{{imgSrc}}"></image>
+</view>

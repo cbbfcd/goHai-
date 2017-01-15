@@ -1,15 +1,16 @@
-// pages/ser/search.js
+/**
+ * @description 扫描二维码
+ * @author 黄腾
+ * @time 2017-1-15
+ */
+const app = getApp()
+
 Page({
   data:{
-    imgUrls:[
-      '../../imgs/6.jpg',
-      '../../imgs/5.png',
-      '../../imgs/5.jpg'
-      
-    ]
+    imgSrc:'/imgs/15.png'
   },
   onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+   
   },
   onReady:function(){
     // 页面渲染完成
@@ -22,5 +23,18 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+  scanCode:function(){
+    app.wechat.scanCode().then(res=>{
+      console.log(res)
+      wx.showToast({
+        title:res.result
+      })
+    }).catch(err =>{
+      console.log(err)
+      wx.showToast({
+        title:'扫码失败'
+      })
+    })
   }
 })

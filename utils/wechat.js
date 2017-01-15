@@ -140,6 +140,17 @@ function openLoc(wd,jd,scale,name){
         })
     })
 }
+/**
+ * 扫描二维码
+ */
+function scanCode(){
+    return new Promise((resolve,reject)=>{
+        wx.scanCode({
+          success: resolve,
+          fail: reject
+        })
+    })
+}
 module.exports = {
     login:login,
     navigatorTo:navigatorTo,
@@ -151,5 +162,6 @@ module.exports = {
     clearStorage:clearStorage,
     getUserLocation:getUserLocation,
     setNavigatorTitle:setNavigatorTitle,
-    openLoc:openLoc
+    openLoc:openLoc,
+    scanCode:scanCode
 }

@@ -46,5 +46,12 @@ Page({
     wx.showToast({
       title:'别点了，不告诉你'
     })
+  },
+  onShareAppMessage:function(){
+    return {
+      title:this.data.eventData.title,
+      desc:'活动分享',
+      path:'www.baidu.com'
+    }
   }
 })

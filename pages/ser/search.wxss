@@ -1,1 +1,11 @@
-/* pages/ser/search.wxss */
+.scan-view{
+    width:750rpx;
+    height:1138rpx
+}
+.scan-img{
+    width:254rpx;
+    height:254rpx;
+    position: fixed;
+    top:400rpx;
+    left:248rpx;
+}
